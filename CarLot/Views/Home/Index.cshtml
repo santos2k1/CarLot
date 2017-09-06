@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Car Dealership Organizer</h1>
+    <p class="lead">This webapp organizes your car dealership</p>
+
+    
+</div>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+
+<style>
+    .selected {
+        color: white;
+        background: blue
+    }
+</style>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Lot</h2>
+        <p>
+            This page organizes your car into which lot and section you want your cars you want to place it in. 
+        </p>
+
+     
+        <p><button class="Button" id="jQueryColorChange">Lot</button></p>
+
+
+        <a href="..\Lots">Click Here!</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Car</h2>
+        <p>This organizes your car and lets you organize it with Make/Model, price, and is the car is new</p>
+
+        <p><button class="Button" id="jQueryColorChange">Car</button></p>
+
+
+        <a href="..\Cars">Click Here!</a>
+    </div>
+    <script>
+        
+
+        $("button#jQueryColorChange").click(function () {
+            $(this).toggleClass("selected");
+        });
+
+
+    </script>
+</div>
